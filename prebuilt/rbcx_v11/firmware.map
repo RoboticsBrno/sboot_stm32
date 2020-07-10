@@ -1,0 +1,212 @@
+Archive member included to satisfy reference by file (symbol)
+
+build/objfw/libusb.a(usbd_core.o)
+                              build/objfw/bootloader.o (symbol from plugin) (usbd_poll)
+build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+                              build/objfw/bootloader.o (symbol from plugin) (usbd_devfs_asm)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 build/objfw/stm32f103VC_RBCX_v11.o
+ .text          0x0000000000000000       0xd0 build/objfw/rc5a.o
+ .data          0x0000000000000000        0x0 build/objfw/rc5a.o
+ .bss           0x0000000000000000       0x68 build/objfw/rc5a.o
+ .ARM.attributes
+                0x0000000000000000       0x22 build/objfw/rc5a.o
+ .text          0x0000000000000000      0x134 build/objfw/chacha_a.o
+ .data          0x0000000000000000        0x0 build/objfw/chacha_a.o
+ .bss           0x0000000000000000       0x84 build/objfw/chacha_a.o
+ .ARM.attributes
+                0x0000000000000000       0x22 build/objfw/chacha_a.o
+ .text          0x0000000000000000        0x0 build/objfw/rc6a.o
+ .data          0x0000000000000000        0x0 build/objfw/rc6a.o
+ .bss           0x0000000000000000       0xb0 build/objfw/rc6a.o
+ .text.rc6a_init
+                0x0000000000000000       0x68 build/objfw/rc6a.o
+ .text.rc6a_encrypt
+                0x0000000000000000       0x54 build/objfw/rc6a.o
+ .text.rc6a_decrypt
+                0x0000000000000000       0x54 build/objfw/rc6a.o
+ .ARM.attributes
+                0x0000000000000000       0x22 build/objfw/rc6a.o
+ .data          0x0000000000000000        0x0 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+ .bss           0x0000000000000000        0x0 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x0000000008000000 0x0000000000040000 xr
+RAM              0x0000000020000000 0x000000000000c000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000008000000      0xc34
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000       0x40 build/objfw/stm32f103VC_RBCX_v11.o
+                0x0000000008000000                __isr_vector
+ *(.rodata.usbd_devfs)
+ *(.rodata.usbd_devfs_asm)
+ .rodata.usbd_devfs_asm
+                0x0000000008000040       0x34 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+                0x0000000008000040                usbd_devfs_asm
+ *(.rodata.usbd_otgfs)
+ *(.rodata_usbd_otghs)
+ *(.text.usbd_poll)
+ .text.usbd_poll
+                0x0000000008000074        0xc /tmp/ccBoQMxi.ltrans0.ltrans.o
+                0x0000000008000074                usbd_poll
+ *(.text*)
+ .text.usbd_process_evt
+                0x0000000008000080       0x5c /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.usbd_set_address
+                0x00000000080000dc       0x1e /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.usbd_stall_pid
+                0x00000000080000fa       0x26 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.usbd_process_callback
+                0x0000000008000120       0x12 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.usbd_process_eptx
+                0x0000000008000132       0x72 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.usbd_process_ep0
+                0x00000000080001a4      0x228 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.dfu_config
+                0x00000000080003cc       0x1c /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.dfu_get_descriptor
+                0x00000000080003e8       0x48 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.dfu_reset
+                0x0000000008000430       0x24 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.dfu_set_idle
+                0x0000000008000454       0x2c /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.dfu_control
+                0x0000000008000480      0x15c /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .text.startup.main
+                0x00000000080005dc       0x58 /tmp/ccBoQMxi.ltrans0.ltrans.o
+                0x00000000080005dc                main
+ .text          0x0000000008000634       0xf8 build/objfw/stm32f103VC_RBCX_v11.o
+                0x0000000008000634                Reset_Handler
+                0x00000000080006f6                DebugMon_Handler
+                0x00000000080006f6                HardFault_Handler
+                0x00000000080006f6                SysTick_Handler
+                0x00000000080006f6                PendSV_Handler
+                0x00000000080006f6                NMI_Handler
+                0x00000000080006f6                UsageFault_Handler
+                0x00000000080006f6                MemManage_Handler
+                0x00000000080006f6                SVC_Handler
+                0x00000000080006f6                BusFault_Handler
+ .text          0x000000000800072c      0x44c build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+ *(.rodata*)
+ .rodata.dfu_config_desc
+                0x0000000008000b78       0x1b /tmp/ccBoQMxi.ltrans0.ltrans.o
+ *fill*         0x0000000008000b93        0x1 
+ .rodata.dfu_config_sdesc
+                0x0000000008000b94        0xa /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dfu_device_desc
+                0x0000000008000b9e       0x12 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dfu_flash_sdesc
+                0x0000000008000bb0       0x20 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dfu_lang_sdesc
+                0x0000000008000bd0        0x4 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dfu_manuf_sdesc
+                0x0000000008000bd4       0x26 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dfu_product_sdesc
+                0x0000000008000bfa       0x26 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .rodata.dtable
+                0x0000000008000c20       0x14 /tmp/ccBoQMxi.ltrans0.ltrans.o
+
+.glue_7         0x0000000008000c34        0x0
+ .glue_7        0x0000000008000c34        0x0 linker stubs
+
+.glue_7t        0x0000000008000c34        0x0
+ .glue_7t       0x0000000008000c34        0x0 linker stubs
+
+.vfp11_veneer   0x0000000008000c34        0x0
+ .vfp11_veneer  0x0000000008000c34        0x0 linker stubs
+
+.v4_bx          0x0000000008000c34        0x0
+ .v4_bx         0x0000000008000c34        0x0 linker stubs
+
+.iplt           0x0000000008000c34        0x0
+ .iplt          0x0000000008000c34        0x0 build/objfw/stm32f103VC_RBCX_v11.o
+
+.rel.dyn        0x0000000008000c34        0x0
+ .rel.iplt      0x0000000008000c34        0x0 build/objfw/stm32f103VC_RBCX_v11.o
+                0x0000000008000c34                . = ALIGN (0x4)
+                0x0000000008000c34                __etext = .
+                0x0000000008000cb0                . = (. + SIZEOF (.data))
+                0x0000000008001000                __app_start = ALIGN (0x800)
+
+.data           0x0000000020000000       0x7c load address 0x0000000008000c34
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __data_start__ = .
+ *(.data*)
+ .data          0x0000000020000000       0x7c build/objfw/stm32f103VC_RBCX_v11.o
+                0x0000000020000000                program_flash
+                0x000000002000007c                . = ALIGN (0x4)
+                0x000000002000007c                __data_end__ = .
+
+.igot.plt       0x000000002000007c        0x0 load address 0x0000000008000cb0
+ .igot.plt      0x000000002000007c        0x0 build/objfw/stm32f103VC_RBCX_v11.o
+
+.bss            0x000000002000007c       0xfc load address 0x0000000008000cb0
+                0x000000002000007c                . = ALIGN (0x4)
+                0x000000002000007c                __bss_start__ = .
+ *(.bss*)
+ .bss.dfu       0x000000002000007c       0x64 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .bss.dfu_buffer
+                0x00000000200000e0       0x88 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .bss.dfu_data  0x0000000020000168       0x10 /tmp/ccBoQMxi.ltrans0.ltrans.o
+ *(COMMON)
+                0x0000000020000178                . = ALIGN (0x4)
+                0x0000000020000178                __bss_end__ = .
+                0x0000000008040000                PROVIDE (__romend = (ORIGIN (ROM) + LENGTH (ROM)))
+                0x000000002000bffc                PROVIDE (__stack = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x4))
+LOAD build/objfw/arc4.o
+LOAD /tmp/ccBoQMxi.ltrans0.ltrans.o
+LOAD build/objfw/chacha.o
+LOAD build/objfw/gost.o
+LOAD build/objfw/raiden.o
+LOAD build/objfw/rc5.o
+LOAD build/objfw/speck.o
+LOAD build/objfw/xtea.o
+LOAD build/objfw/xtea1.o
+LOAD build/objfw/blowfish.o
+LOAD build/objfw/rtea.o
+LOAD build/objfw/rc6.o
+LOAD build/objfw/rijndael.o
+LOAD build/objfw/magma.o
+LOAD build/objfw/checksum.o
+LOAD build/objfw/crypto.o
+LOAD build/objfw/stm32f103VC_RBCX_v11.o
+LOAD build/objfw/descriptors.o
+LOAD build/objfw/bootloader.o
+LOAD build/objfw/rc5a.o
+LOAD build/objfw/chacha_a.o
+LOAD build/objfw/rc6a.o
+LOAD build/objfw/libusb.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+OUTPUT(build/firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x0000000000000000       0x4e
+ .comment       0x0000000000000000       0x4e /tmp/ccBoQMxi.ltrans0.ltrans.o
+                                         0x4f (size before relaxing)
+
+.ARM.attributes
+                0x0000000000000000       0x29
+ .ARM.attributes
+                0x0000000000000000       0x2b /tmp/ccBoQMxi.ltrans0.ltrans.o
+ .ARM.attributes
+                0x000000000000002b       0x21 build/objfw/stm32f103VC_RBCX_v11.o
+ .ARM.attributes
+                0x000000000000004c       0x21 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
