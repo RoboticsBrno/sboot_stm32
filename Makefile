@@ -536,5 +536,10 @@ stm32f446xc :
 	                   FWDEFS='STM32F4 STM32F446xx' \
 	                   LDPARAMS='ROMLEN=256K RAMLEN=128K APPALIGN=0x4000'
 
+rbcx_v11 :
+	$(MAKE) bootloader FWCPU='-mcpu=cortex-m3' \
+	                   FWSTARTUP='mcu/stm32f103VC_RBCX_v11.S' \
+	                   FWDEFS='STM32F1 STM32F103xE USBD_ASM_DRIVER USBD_DP_PORT=GPIOD USBD_DP_PIN=2' \
+	                   LDPARAMS='ROMLEN=256K RAMLEN=48K'
 
 .PHONY: clean bootloader crypter all program program_stcube rebuild fwclean testsuite prerequisites $(FWTARGETS)
